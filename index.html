@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -11,37 +11,58 @@
       crossorigin="anonymous"
     />
     <title>Document</title>
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <!--CDN Fontawesome-->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="./assets/img/viajes.svg" width="20" alt="" /><h1>VIAJES CHILE</h1></a>
+    <nav class="navbar navbar-expand-sm fixed-top navbar-dark nav-config">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img class="img-logo" src="./assets/img/viajes.svg" width="30" alt="logo viajes chile">  Viajes Chile</a>
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon text-light"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <div class="collapse navbar-collapse justify-content-end black" id="navbarNav">
+          <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              <a class="nav-link active" aria-current="page" href="#"></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Quienes Somos</a>
+              <a class="nav-link active" href="#">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled">Destacados</a>
+              <a class="nav-link active" href="#QS">Quienes Somos</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link disabled">Contacto</a>
-              </li>
+              <a class="nav-link active" href="#DS">Destacados</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#CT">Contacto</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -96,117 +117,126 @@
       </div>
     </header>
     <main>
-      <section>
-        <h2>Quienes Somos</h2>
-        <div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias,
-            aspernatur vero voluptatibus sint sit ex ipsa asperiores non
-            laboriosam, atque rem doloribus pariatur veniam, quas voluptatem cum
-            laudantium provident fugit? Est error reiciendis nemo quos! Et
-            voluptates voluptate cumque maiores consequuntur tempore nisi. Enim
-            id consectetur eligendi soluta assumenda ipsam, libero pariatur
-            earum sint modi quo odio natus optio velit?
-          </p>
-        </div>
-        <div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias,
-            aspernatur vero voluptatibus sint sit ex ipsa asperiores non
-            laboriosam, atque rem doloribus pariatur veniam, quas voluptatem cum
-            laudantium provident fugit? Est error reiciendis nemo quos! Et
-            voluptates voluptate cumque maiores consequuntur tempore nisi. Enim
-            id consectetur eligendi soluta assumenda ipsam, libero pariatur
-            earum sint modi quo odio natus optio velit?
-          </p>
-        </div>
-        <div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias,
-            aspernatur vero voluptatibus sint sit ex ipsa asperiores non
-            laboriosam, atque rem doloribus pariatur veniam, quas voluptatem cum
-            laudantium provident fugit? Est error reiciendis nemo quos! Et
-            voluptates voluptate cumque maiores consequuntur tempore nisi. Enim
-            id consectetur eligendi soluta assumenda ipsam, libero pariatur
-            earum sint modi quo odio natus optio velit?
-          </p>
-        </div>
-      </section>
-      <section class="container">
+      <div class="container card-move d-none d-md-block">
         <div class="row">
-          <h2>Destacados</h2>
-        </div>
-        <div class="row">
-          <div class="col-12 col-lg-3">
-            <div class="card">
-              <img
-                src="./assets/img/card1.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+          <h1 class="text-center text-white titulos mb-3" id="QS">¿Quienes Somos?</h1>
+            <hr class="bg-info hr-new mb-5">
+          <div class="col">
+            <div class="card" style="max-width: 18rem">
+              <div class="card-header bg-info d-flex justify-content-center">
+                <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="top" title="Vuelos a todo Chile"><i class="fas fa-plane"></i>
+              </div>
+              <div class="card-body text-white">
+                
+                <p class="card-text text-white">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa fugit excepturi beatae repellat error, nam eos suscipit aut dolores, non numquam voluptate repudiandae necessitatibus cum blanditiis ex ipsam corrupti magnam!
                 </p>
               </div>
             </div>
           </div>
-          <div class="col-12 col-lg-3">
-            <div class="card">
-              <img
-                src="./assets/img/card2.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+          <div class="col">
+            <div class="card" style="max-width: 18rem">
+              <div class="card-body text-white">
+                
+                <p class="card-text text-white">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque fugit dolorem natus voluptatem rerum, libero vero quod voluptates maiores, repellendus atque tempore officiis eum sit, quam voluptatum. Itaque, odio alias.
                 </p>
+              </div>
+              <div class="card-footer bg-info d-flex justify-content-center">
+                <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="top" title="Patagonia"><i class="fas fa-mountain"></i>
               </div>
             </div>
           </div>
-          <div class="col-12 col-lg-3">
-            <div class="card">
-              <img
-                src="./assets/img/card3.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
+          <div class="col">
+            <div class="card" style="max-width: 18rem">
+              <div class="card-header bg-info d-flex justify-content-center">
+                <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="top" title="Senderismo y Aventura"><i class="fas fa-route"></i>
               </div>
-            </div>
-          </div>
-          <div class="col-12 col-lg-3">
-            <div class="card">
-              <img
-                src="./assets/img/card4.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
+              <div class="card-body text-white">
+                
                 <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium pariatur ab totam doloribus temporibus impedit sequi placeat quis nobis, quaerat eum laboriosam earum rem dolorum fugiat voluptate perferendis alias autem.
                 </p>
               </div>
             </div>
           </div>
         </div>
+        <!--Fin del Row-->
+      </div>
+      <section class="container text-white">
+        <h5 class="text-center titulos text-white" id="DS">Destacados</h5>
+        <hr class="hr-new">
+      <div class="row row-cols-1 row-cols-md-4 g-2">
+        <div class="col">
+          <div class="card h-100">
+            <img src="./assets/img/card1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+              <p class="card-text2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et illo nulla iste ipsum, veniam officia. Aspernatur aut, distinctio facere quo unde minima reiciendis error deleniti quod odit rerum mollitia animi, esse necessitatibus et exercitationem tempore non quidem? Nesciunt, aut accusamus.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="./assets/img/card2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Lorem, ipsum dolor.</h5>
+              <p class="card-text2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora harum atque alias, incidunt explicabo error at tenetur, minus non culpa beatae rerum quis laboriosam repudiandae qui saepe! Corrupti, ut, ea pariatur consequatur voluptates recusandae nobis commodi est, totam quae cum?</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="./assets/img/card3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Lorem ipsum, dolor sit amet.</h5>
+              <p class="card-text2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit placeat quia sit vitae iure eius molestiae dolore repudiandae amet quis laudantium, nobis nostrum, sint nemo ullam quas itaque officiis velit, optio fugit facilis a. Aperiam consequatur voluptas numquam rem animi.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="./assets/img/card4.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+              <p class="card-text2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae distinctio dolores cumque voluptatem provident, qui repudiandae excepturi quod tempore eos animi voluptate aperiam minima itaque nobis soluta harum a. Ipsum aut omnis possimus fugit, inventore distinctio maxime! Dolor, porro voluptatum!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="container mb-4">
+        <h5 class="text-center titulos text-white" id="CT">Contacto</h5>
+        <hr class="hr-new">
+        
+        <div
+            data-tf-widget="UzJAhytM"
+            data-tf-opacity="77"
+            data-tf-hide-headers
+            data-tf-iframe-props="title=Contact Form (copia)"
+            data-tf-medium="snippet"
+            style="width: 100%; height: 400px"
+          ></div>
+          <script src="//embed.typeform.com/next/embed.js"></script>
       </section>
-      <section></section>
     </main>
     <footer>
-      <p>VIAJES CHILE</p>
-      <i></i>
-      <i></i>
-      <i></i>
-    </footer>
+      <div class="container-fluid bg-info text-white">
+      <div class="row g-0 ">
+         <div class="col-sm-6 col-md-8 my-3 logo-txt"><a class="nav-link text-white" aria-current="page" href="#">VIAJES CHILE</a></div>
+          <div class="col-6 col-md-4 icons-txt">
+          <a rel="stylesheet" href="https://github.com" target="_blank"><i class="fab fa-github fs-3 mx-1 my-4 text-white"></i></a>
+          <a rel="stylesheet" href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin fs-3 mx-1 text-white"></i></a>
+          <a rel="stylesheet" href="https://twitter.com" target="_blank"><i class="fab fa-twitter fs-3 mx-1 text-white"></i></a>
+          <a rel="stylesheet" href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square fs-3 text-white"></i></a>
+        </div>
+      </div>
+      </div>
+</footer>
+<script
+src="https://code.jquery.com/jquery-3.6.0.min.js"
+integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+crossorigin="anonymous"
+></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
