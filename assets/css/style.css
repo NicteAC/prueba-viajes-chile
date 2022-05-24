@@ -1,6 +1,71 @@
-*{
-    margin: 0;
+/* Reseteo de padding y margenes a cero */
+* {
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
-    background-color: black;
-}
+  }
+  /* Habilitacion Smooth Control*/
+  html {
+    scroll-behavior: smooth;
+  }
+  /*Fuente de texto principal del sitio y BG negro*/
+  body {
+    background: #000;
+    font-family: "IBM Plex Sans", sans-serif;
+  }
+  /* tamaño logo principal */
+  .img-logo {
+    width: 30px;
+    left: 15px;
+  }
+  /* font footer logo */
+  .logo-txt {
+    font-weight: 700;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content:center;
+  }
+  /* icons footer logos */
+  .icons-txt {
+    margin: auto;
+  }
+  /* config navbar  */
+  .nav-config {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    background: none;
+    border: 0;
+    border-radius: 0;
+  }
+  /*carousel al tope */
+  .car-top {
+    top: 0;
+    margin-left: 0;
+  }
+  /*Configuracion de titulos de secciones*/
+  .titulos {
+    font-weight: 400;
+    font-size: 30px;
+    margin-top: 3rem;
+  }
+  /*Lineas de division*/
+  .hr-new {
+    border: 1px solid cyan;
+  }
+  /* Elimnacion de bordes y color BG Negro*/
+  .card {
+    border: 0;
+    background-color: #000;
+  }
+  
+  /*Ajusta las imagenes de las cards de bootstrap al mismo tamaño*/
+  .card-img-top {
+    height: 15vw;
+    width: 100%;
+    object-fit: cover;
+  }
+  .navbar{
+    transition: all 300ms ease-in-out;
+  }
+  
